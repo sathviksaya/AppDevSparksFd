@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
 
 import 'customerScreen.dart';
-import 'main.dart';
 
 class HomeScreen extends StatelessWidget {
+
+  final List<Map> list;
+  HomeScreen(this.list);
+
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
       physics: BouncingScrollPhysics(),
-      itemCount: InitDB.list.length,
+      itemCount: list.length,
       itemBuilder: (context, index) {
-        var user = InitDB.list[index];
+        var user = list[index];
         return Padding(
           padding: const EdgeInsets.all(8.0),
           child: ListTile(
@@ -30,7 +33,7 @@ class HomeScreen extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => CustomerScreen(
-                    user: user,
+                    id: index,
                   ),
                 ),
               );

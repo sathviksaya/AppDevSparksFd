@@ -21,13 +21,13 @@ class MyApp extends StatelessWidget {
 }
 
 class InitDB extends StatefulWidget {
-  static List<Map> list;
   @override
   _InitDBState createState() => _InitDBState();
 }
 
 class _InitDBState extends State<InitDB> {
   bool isLoading = true;
+  List<Map> list;
 
   @override
   void initState() {
@@ -50,6 +50,15 @@ class _InitDBState extends State<InitDB> {
           mobile int not NULL, 
           balance double not NULL);''');
 
+        await db.execute('''CREATE TABLE Transactions(  
+            trId int auto_increment primary key,        
+            sender varchar(20),
+            recipient varchar(20),
+            date varchar(10),
+            amount double,
+            senderBalance double,
+            recipientBalance double);''');
+
         await db.execute(''' 
           INSERT INTO Users(username, email, mobile, balance) 
           VALUES 
@@ -65,7 +74,8 @@ class _InitDBState extends State<InitDB> {
           ("Wanda", "wanda@gmail.com", 2136383243, 12500.5);''');
       },
     );
-    InitDB.list = await database.rawQuery('SELECT * FROM Users');
+    list = await database.rawQuery('SELECT * FROM Users');
+
     setState(() {
       isLoading = false;
     });
@@ -81,7 +91,7 @@ class _InitDBState extends State<InitDB> {
           ? const Center(
               child: CircularProgressIndicator(),
             )
-          : HomeScreen(),
+          : HomeScreen(list),
     );
   }
 }
