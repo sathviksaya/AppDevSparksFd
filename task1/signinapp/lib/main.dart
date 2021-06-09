@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           title: 'SignIn App',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
-            primarySwatch: Colors.blue,
+            primarySwatch: Colors.purple,
           ),
           home: snapshot.connectionState != ConnectionState.done
               ? Scaffold(
