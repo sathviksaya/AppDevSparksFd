@@ -10,4 +10,4 @@ Banking Application which has predefined database developed using Flutter and SQ
 To try out the banking app, you can download the apk which is named as app-release.apk, in bankingapp home directory.
 
 # app demonstration
-To check out the app walkthrough, click on this link - 
+To check out the app walkthrough, click on this link - https://www.linkedin.com/posts/sathvik-saya-384a01197_gripjune21-sparksfoundation-appdevelopment-activity-6808774494992384000-F16U 
