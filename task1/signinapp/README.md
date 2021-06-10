@@ -1,16 +1,12 @@
-# signinapp
+# bankingapp
 
-A new Flutter project.
+Sign In Application is developed using Flutter and Firebase.
+1. Users must login through either google or github sign in.
+2. Users will be redirected to homescreen which has their details which are retrieved from which platform they have signed in through.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# apk
+To try out the signin app, you can download the apk which is named as app-release.apk, in bankingapp home directory.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# app demonstration
+To check out the app walkthrough, click on this link - 

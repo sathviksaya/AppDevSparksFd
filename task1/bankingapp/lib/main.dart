@@ -38,7 +38,7 @@ class _InitDBState extends State<InitDB> {
   void initDatabase() async {
     var databasesPath = await getDatabasesPath();
     String path = databasesPath + 'banking.db';
-    await deleteDatabase(path);
+    // await deleteDatabase(path);      //comment this line, if you want your transactions to persist.
     Database database = await openDatabase(
       path,
       version: 1,
