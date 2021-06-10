@@ -6,7 +6,7 @@ Sign In Application is developed using Flutter and Firebase.
 
 
 # apk
-To try out the signin app, you can download the apk which is named as app-release.apk, in bankingapp home directory.
+To try out the signin app, you can download the apk which is named as app-release.apk, in signinapp home directory.
 
 # app demonstration
 To check out the app walkthrough, click on this link - https://www.linkedin.com/posts/sathvik-saya-384a01197_gripjune21-sparksfoundation-appdevelopment-activity-6808776780548329472-ldJi 
